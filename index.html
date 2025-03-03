@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Automation Agency</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,6 +14,8 @@
             color: white;
             text-align: center;
         }
+
+        /* Overlay Effect */
         .overlay {
             background: rgba(0, 0, 0, 0.6);
             height: 100vh;
@@ -22,59 +25,97 @@
             align-items: center;
             padding: 20px;
         }
+
         .header {
             font-size: 42px;
             font-weight: bold;
             margin-bottom: 15px;
         }
+
         .subtext {
             font-size: 20px;
             margin-bottom: 25px;
             max-width: 700px;
         }
+
         .cta-button {
             background-color: #FF0000; /* YouTube Red */
             color: white;
-            padding: 15px 40px;
             font-size: 18px;
+            padding: 12px 24px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
-            text-transform: uppercase;
+            text-decoration: none;
             font-weight: bold;
+            transition: 0.3s;
         }
+
         .cta-button:hover {
-            background-color: #CC0000;
+            background-color: #cc0000;
         }
+
+        /* Services Section */
         .services {
-            margin-top: 50px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
         }
-        .service-box {
+
+        .service-card {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-            text-align: center;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 32px;
+            }
+
+            .subtext {
+                font-size: 18px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .service-card {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="overlay">
-        <div class="header">Grow Your YouTube Channel with Automation</div>
-        <div class="subtext">We provide high-quality scripting, video editing, SEO, thumbnails, and automation strategies to scale your YouTube channel effortlessly.</div>
-        <button class="cta-button">Get Started Now</button>
-        
+        <h1 class="header">Grow Your YouTube Channel with Automation</h1>
+        <p class="subtext">We provide high-quality scripting, video editing, SEO, thumbnails, and automation strategies to scale your YouTube channel effortlessly.</p>
+        <a href="#" class="cta-button">GET STARTED NOW</a>
+
+        <!-- Services -->
         <div class="services">
-            <div class="service-box">📜 Scriptwriting</div>
-            <div class="service-box">🎥 Video Editing</div>
-            <div class="service-box">🔊 Voiceovers</div>
-            <div class="service-box">📸 Custom Thumbnails</div>
-            <div class="service-box">📈 SEO Optimization</div>
-            <div class="service-box">🚀 Growth Strategies</div>
+            <div class="service-card">📜 Scriptwriting</div>
+            <div class="service-card">🎬 Video Editing</div>
+            <div class="service-card">🎤 Voiceovers</div>
+            <div class="service-card">📸 Custom Thumbnails</div>
+            <div class="service-card">🔍 SEO Optimization</div>
+            <div class="service-card">🚀 Growth Strategies</div>
         </div>
     </div>
 </body>
